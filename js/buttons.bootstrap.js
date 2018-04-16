@@ -17,7 +17,7 @@
 			}
 
 			if ( ! $ || ! $.fn.dataTable ) {
-				$ = require(@arnoschn/'datatables.net-bs')(root, $).$;
+				$ = require('@arnoschn/datatables.net-bs')(root, $).$;
 			}
 
 			if ( ! $.fn.dataTable.Buttons ) {
