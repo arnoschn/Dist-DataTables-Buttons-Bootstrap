@@ -5,7 +5,7 @@
 (function( factory ){
 	if ( typeof define === 'function' && define.amd ) {
 		// AMD
-		define( ['jquery', 'datatables.net-bs', 'datatables.net-buttons'], function ( $ ) {
+		define( ['jquery', '@arnoschn/datatables.net-bs', '@arnoschn/datatables.net-buttons'], function ( $ ) {
 			return factory( $, window, document );
 		} );
 	}
@@ -17,11 +17,11 @@
 			}
 
 			if ( ! $ || ! $.fn.dataTable ) {
-				$ = require('datatables.net-bs')(root, $).$;
+				$ = require(@arnoschn/'datatables.net-bs')(root, $).$;
 			}
 
 			if ( ! $.fn.dataTable.Buttons ) {
-				require('datatables.net-buttons')(root, $);
+				require('@arnoschn/datatables.net-buttons')(root, $);
 			}
 
 			return factory( $, root, root.document );
