@@ -29,8 +29,8 @@
         "url": "http://datatables.net"
     },
     "dependencies": {
-        "datatables.net-bs": "^1.10.15",
-        "datatables.net-buttons": "1.5.1"
+        "datatables.net-bs": "git+https://github.com/arnoschn/Dist-DataTables-Bootstrap.git#7033525f8bc13595259b2f57c14333399318974c",
+        "@arnoschn/datatables.net-buttons": "git+https://github.com/arnoschn/Dist-DataTables-Buttons.git#cfffbbd717f7dbe9885b7a3307055d81d61e9ce9"
     },
     "repository": {
         "type": "git",
